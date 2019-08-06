@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringJdbc/src/main/java/greetings.xml&apos; to &apos;dbconfig.xml&apos;" description="Rename resource &apos;greetings.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/greetings.xml" name="dbconfig.xml" stamp="1564486890929" updateReferences="true"/>
+</session>

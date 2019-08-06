@@ -1,0 +1,61 @@
+package com.zensar.services.business;
+/*Author:Yashika Goyal
+Creation Date:30 JULY 2019 4:58PM
+Modified Date:30 july 2019 4:58PM
+Version:1.0
+Copyright:Zensar Technologies. All rights preserved.
+Description: Represent product services which can be accessed in presentation layer.
+it encapsulates business logic of product entity.
+*/ 
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.zensar.daos.ProductDao;
+import com.zensar.entities.Product;
+@Service
+
+public class ProductServiceImpl implements ProductService {
+@Autowired
+	
+	private ProductDao dao;
+	
+	public void create(Product product) {
+		// TODO Auto-generated method stub
+         dao.insert(product);
+	}
+
+	public void edit(Product product) {
+		// TODO Auto-generated method stub
+         Product dbProduct= findproductById(product.getProductId());
+         if(dbProduct!=null)
+         {
+        	 dbProduct.setName(product.getName());
+        	 dbProduct.setBrand(product.getBrand());
+        	 dbProduct.setPrice(product.getPrice());
+        	 dao.update(dbProduct);
+         }
+         else
+         {
+        	 System.out.println(" sorry! Product does not exist");
+         }
+	}
+
+	public void remove(Product product) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Product findproductById(int productId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Product> findAllProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

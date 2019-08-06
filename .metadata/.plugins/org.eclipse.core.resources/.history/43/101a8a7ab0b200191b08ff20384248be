@@ -1,0 +1,45 @@
+package com.zensar.daos;
+/*Author:Yashika Goyal
+Creation Date:30 JULY 2019 3:015PM
+Modified Date:30 july 2019 3:15PM
+Version:1.0
+Copyright:Zensar Technologies. All rights preserved.
+Description: Represents business entity product. 
+It is a value object of application , domain or application object.
+it is a pojo class
+.*/ 
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.zensar.entities.Product;
+
+@Repository
+public class ProductdaoImpl implements ProductDao {
+
+	public void insert(Product product) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void update(Product product) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Product product) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Product getById(int productId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Product> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

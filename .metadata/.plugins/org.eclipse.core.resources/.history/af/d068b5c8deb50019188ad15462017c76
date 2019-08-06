@@ -1,0 +1,5 @@
+package com.zensar.services.web;
+
+public class ProductResource {
+
+}

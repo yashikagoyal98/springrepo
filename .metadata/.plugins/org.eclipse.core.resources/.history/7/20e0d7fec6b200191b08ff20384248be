@@ -1,0 +1,22 @@
+package com.zensar.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.zensar.entities.Product;
+import com.zensar.services.business.ProductService;
+
+/**
+ * Hello world!
+ *
+ */
+public class DbOperations 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext ctx=new ClassPathXmlApplicationContext("dbconfig.xml");
+    	Product product=new Product(1001, "Laptop", "Lenovo", 70000.00f);
+    	ProductService service=ctx.getBean("productServiceImpl",ProductService.class);
+    	service.create(product);
+    }
+}

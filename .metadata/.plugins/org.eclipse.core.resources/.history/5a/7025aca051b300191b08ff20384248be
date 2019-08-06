@@ -1,0 +1,30 @@
+package com.zensar.daos;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+/*Author:Yashika Goyal
+Creation Date:30 JULY 2019 3:32PM
+Modified Date:30 july 2019 3:32PM
+Version:1.0
+Copyright:Zensar Technologies. All rights preserved.
+Description: Represent data access object class .
+which implement DAO interface.
+it contain CRUD  operation method implementation .
+for an entity product.
+*/ 
+import java.util.List;
+
+import javax.xml.transform.Result;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.stereotype.Repository;
+
+import com.zensar.entities.Product;
+
+@Repository
+public class ProductdaoImpl implements ProductDao {
+	
+}
